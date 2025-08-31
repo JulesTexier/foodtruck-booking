@@ -1,15 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|c:\\users\\audensiel\\documents\\projets\\autres\\foodtruck-booking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|c:\\users\\audensiel\\documents\\projets\\autres\\foodtruck-booking\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|solutionrelative:services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|c:\\users\\audensiel\\documents\\projets\\autres\\foodtruck-booking\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|solutionrelative:controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|c:\\users\\audensiel\\documents\\projets\\autres\\foodtruck-booking\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A60A0A97-426D-451D-8F3A-C80173C14232}|foodtruck-booking.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 421,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 246,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +39,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T16:45:24.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "Services\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Services\\ReservationService.cs",
+              "RelativeToolTip": "Services\\ReservationService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAvwDEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T16:30:26.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAEwBcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T16:20:55.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Audensiel\\Documents\\PROJETS\\Autres\\foodtruck-booking\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-31T16:14:38.653Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using foodtruck_booking.Models;
+using foodtruck_booking.Services;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +10,34 @@ namespace foodtruck_booking.Controllers
     [ApiController]
     public class ReservationsController : ControllerBase
     {
+
+        private readonly ReservationService _reservationService;
+        public ReservationsController(ReservationService reservationService)
+        {
+            _reservationService = reservationService;
+        }
+
         // GET: api/<ReservationsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<IEnumerable<Reservation>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_reservationService.GetAllReservations());
+        }
+
+        // POST api/<ReservationsController>
+        [HttpPost]
+        public ActionResult<Reservation> Create([FromBody] DateTime Date, string Plate, double Size)
+        {
+            try
+            {
+                var res = _reservationService.AddReservation(Date, Plate, Size);
+                return Ok(res);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         // GET api/<ReservationsController>/5
@@ -22,11 +47,6 @@ namespace foodtruck_booking.Controllers
             return "value";
         }
 
-        // POST api/<ReservationsController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
         // PUT api/<ReservationsController>/5
         [HttpPut("{id}")]

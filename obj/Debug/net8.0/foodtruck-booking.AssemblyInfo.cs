@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("foodtruck-booking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c1ad5790338bd5a8c819a39ad901057aea16ea3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46b9879c92996adf2b29bc3a32ed5eb613cf8b64")]
 [assembly: System.Reflection.AssemblyProductAttribute("foodtruck-booking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("foodtruck-booking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

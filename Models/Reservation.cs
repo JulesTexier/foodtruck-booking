@@ -7,7 +7,7 @@
         public double Size { get; set; }
         public DateTime Date { get; set; }
         public decimal Cost { get; set; }
-        public bool Cancelled { get; set; } = false;
+        public string Status { get; set; } = "Confirmed";
 
     }
 }
