@@ -24,6 +24,13 @@ namespace foodtruck_booking.Controllers
             return Ok(_reservationService.GetAllReservations());
         }
 
+        // GET: api/<ReservationsController>
+        [HttpGet("active")]
+        public ActionResult<IEnumerable<Reservation>> GetActiveReservations()
+        {
+            return Ok(_reservationService.GetActiveReservations());
+        }
+
         // POST api/<ReservationsController>
         [HttpPost]
         public ActionResult<Reservation> Create([FromBody] DateTime Date, string Plate, double Size)
@@ -37,6 +44,21 @@ namespace foodtruck_booking.Controllers
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
                 return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        // DELETE api/<ReservationsController>/5
+        [HttpDelete("{id}")]
+        public ActionResult Delete(Guid id)
+        {
+            try
+            {
+                _reservationService.delete(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
             }
         }
 
@@ -54,10 +76,5 @@ namespace foodtruck_booking.Controllers
         {
         }
 
-        // DELETE api/<ReservationsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

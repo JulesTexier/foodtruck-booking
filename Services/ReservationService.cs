@@ -40,7 +40,8 @@ namespace foodtruck_booking.Services
                 Date = date,
                 Plate = plate,
                 Cost = cost,
-                Size = size
+                Size = size,
+                Status = "Confirmed"
             };
 
             _reservations.Add(res);
@@ -55,7 +56,27 @@ namespace foodtruck_booking.Services
 
         public IEnumerable<Reservation> GetActiveReservations()
         {
-            return _reservations.Where(r => r.Status == "confirmed");
+            return _reservations.Where(r => r.Status == "Confirmed");
+        }
+
+        public void delete(Guid id)
+        {
+            var reservationToCancel = _reservations.FirstOrDefault(r => r.Id == id);
+
+            if (reservationToCancel == null)
+            {
+                throw new Exception("Reservation not found.");
+            }
+
+            if ((reservationToCancel.Date - DateTime.Today).TotalDays >= 2)
+            {
+                reservationToCancel.Status = "Cancelled";
+                reservationToCancel.Cost = 0;
+            }
+            else
+            {
+                reservationToCancel.Status = "Cancelled";
+            }
         }
     }
 }
