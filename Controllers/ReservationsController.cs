@@ -2,15 +2,12 @@
 using foodtruck_booking.Services;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace foodtruck_booking.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ReservationsController : ControllerBase
     {
-
         private readonly ReservationService _reservationService;
         public ReservationsController(ReservationService reservationService)
         {
@@ -61,20 +58,5 @@ namespace foodtruck_booking.Controllers
                 return NotFound();
             }
         }
-
-        // GET api/<ReservationsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-
-        // PUT api/<ReservationsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
     }
 }

@@ -49,16 +49,25 @@ namespace foodtruck_booking.Services
             return res;
 
         }
+        /// <summary>
+        /// Gets all reservations.
+        /// </summary>
         public IEnumerable<Reservation> GetAllReservations()
         {
             return _reservations;
         }
 
+        /// <summary>
+        /// Gets all active (confirmed) reservations.
+        /// </summary>
         public IEnumerable<Reservation> GetActiveReservations()
         {
             return _reservations.Where(r => r.Status == "Confirmed");
         }
 
+        /// <summary>
+        /// Cancels a reservation by its ID.
+        /// </summary>
         public void delete(Guid id)
         {
             var reservationToCancel = _reservations.FirstOrDefault(r => r.Id == id);
